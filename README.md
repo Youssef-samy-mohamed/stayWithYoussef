@@ -1,54 +1,24 @@
-# React + TypeScript + Vite
+StayWithYoussef
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern hotel booking application built with React and Redux Toolkit, designed to provide a seamless experience for browsing, booking, and managing hotel stays. Explore luxurious accommodations, select rooms with real-time availability, and manage your bookings with ease—all powered by a TypeScript-driven frontend and a mock JSON Server backend.
 
-Currently, two official plugins are available:
+✨ Features
+Browse Hotels & Rooms: Discover hotels like The Lenox Hotel and Atlantis The Palm, with detailed room options (e.g., Deluxe King Room, Royal Suite) including prices, amenities, and availability.
+Smart Booking System: Book rooms by selecting check-in/check-out dates and guest counts, with validation to prevent double bookings for the same room and date range.
+My Bookings Dashboard: View all your bookings with details like hotel name, room type, and total price. Cancel bookings effortlessly, with changes reflected instantly in the Redux store.
+Responsive UI: Enjoy a sleek, user-friendly interface with Tailwind CSS styling and toast notifications for booking confirmations and cancellations.
+Frontend-Driven State Management: Manage bookings entirely in Redux, with cancellations updating the local state without altering the backend database.
+🛠️ Tech Stack
+Frontend: React, TypeScript, Redux Toolkit, React Router, Tailwind CSS
+Backend: JSON Server (mock API with db.json)
+Libraries: react-toastify, react-datepicker
+Tools: Vite (assumed for fast development), ESLint, Prettier
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+📚 Project Highlights
+Type-Safe Code: Built with TypeScript for robust type checking and maintainability.
+Redux-Powered: Efficient state management with Redux Toolkit, handling bookings and cancellations locally.
+Prevent Double Bookings: Logic to ensure rooms can’t be booked for overlapping dates.
+Mock Backend: Uses JSON Server for rapid prototyping, with a db.json structure supporting hotels and bookings.
+🌟 Why StayWithYoussef?
+Whether you’re a traveler planning your next stay or a developer exploring a modern React application, StayWithYoussef offers a polished booking experience backed by clean code and scalable architecture. Contributions are welcome—check out the issues page to get involved!
